@@ -48,8 +48,8 @@ class TaskDef(object):
         "used_in_offset_trigger", "max_future_prereq_offset",
         "intercycle_offsets", "sequential", "is_coldstart",
         "suite_polling_cfg", "clocktrigger_offset", "expiration_offset",
-        "namespace_hierarchy", "triggers", "outputs", "external_triggers",
-        "name", "elapsed_times"]
+        "namespace_hierarchy", "triggers", "outputs", "param_var", 
+        "external_triggers", "name", "elapsed_times"]
 
     # Store the elapsed times for a maximum of 10 cycles
     MAX_LEN_ELAPSED_TIMES = 10
@@ -78,7 +78,7 @@ class TaskDef(object):
         self.namespace_hierarchy = []
         self.triggers = {}
         self.outputs = []
-
+        self.param_var = []
         self.external_triggers = []
 
         self.name = name
