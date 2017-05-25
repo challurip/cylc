@@ -771,8 +771,6 @@ class SuiteConfig(object):
         with a lot of runtime config. We should consider ditching OrderedDict
         and instead using an ordinary dict with a separate list of keys.
         """
-       # import pdb
-       # pdb.set_trace()
         if (not self.parameters[0] and
                 not any(',' in ns for ns in self.cfg['runtime'])):
             # No parameters, no namespace lists: no expansion needed.
